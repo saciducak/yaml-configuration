@@ -1,3 +1,5 @@
+// This is where the general collected code is, but for action examples and dom manipulation, you can also look at other files of project.
+
 // Function to load and parse YAML file
 async function loadYAMLFile(filePath) {
     try {
@@ -65,13 +67,27 @@ function insertElement(position, targetSelector, element) {
 }
 
 // Function to alter text content in the DOM
+/**
+ * Replace old text with new text in all text nodes within the document.
+ * @param {string} oldValue - The text to be replaced.
+ * @param {string} newValue - The text to replace with.
+ */
 function alterTextContent(oldValue, newValue) {
-    document.querySelectorAll('*').forEach(node => {
-        if (node.nodeType === 3 && node.nodeValue.includes(oldValue)) {
-            node.nodeValue = node.nodeValue.replace(new RegExp(oldValue, 'g'), newValue);
+    // Traverse the entire document to find and replace text nodes
+    function traverseNodes(node) {
+        if (node.nodeType === 3) { // Text node
+            if (node.nodeValue.includes(oldValue)) {
+                node.nodeValue = node.nodeValue.replace(new RegExp(oldValue, 'g'), newValue);
+            }
+        } else if (node.nodeType === 1 && node.childNodes) { // Element node
+            Array.from(node.childNodes).forEach(child => traverseNodes(child));
         }
-    });
+    }
+    
+    // Start traversal from the document body
+    traverseNodes(document.body);
 }
+
 
 // Function to load configurations and apply actions
 async function loadAndApplyConfigurations() {

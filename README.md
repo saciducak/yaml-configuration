@@ -6,3 +6,5 @@ JavaScript
 YAML parsing
 DOM manipulation
 Handling configuration conflicts
+
+You can access the codes for each action example from other files of this repo!

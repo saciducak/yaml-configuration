@@ -1,0 +1,4 @@
+actions:
+  - type: alter
+    oldValue: "Machine Learning"
+    newValue: "AI" # Change "Machine Learning" to

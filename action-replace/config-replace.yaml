@@ -1,0 +1,4 @@
+actions:
+  - type: replace
+    selector: "#old-header"
+    newElement: "<header id='new-header' class='header'>New Header Content</header>" # Replace the old header with new content

@@ -1,0 +1,5 @@
+actions:
+  - type: remove
+    selector: ".ad-banner" # Remove all elements with class "ad-banner"
+  - type: remove
+    selector: "#old-header" # Remove element with ID "old-header"

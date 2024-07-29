@@ -1,0 +1,5 @@
+actions:
+  - type: insert
+    position: "after"
+    target: "main"
+    element: "<section><p>New section added after main content</p></section>" # Insert a new section after the main content

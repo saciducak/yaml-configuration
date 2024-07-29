@@ -1,0 +1,58 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header and footer styling */
+.header, footer {
+    background-color: #0052cc;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Main content area */
+main {
+    flex: 1;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #e9ecf3;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.2em;
+    color: #444;
+}
+
+/* Footer specific styling */
+footer {
+    background-color: #003e99;
+    font-size: 1em;
+}
