@@ -1,0 +1,13 @@
+actions:
+  - type: remove
+    selector: ".ad-banner"
+  - type: replace
+    selector: "#old-header"
+    newElement: "<header id='new-header' class='header'>NEW Header ( replace phase ) </header>"
+  - type: insert
+    position: "after"
+    target: "main"
+    element: "<section><p>New Section Inserted After Main Content ( insert phase )</p></section>"
+  - type: alter
+    oldValue: "Dynamic"
+    newValue: "Interactive"
