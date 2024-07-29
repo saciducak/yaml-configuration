@@ -1,0 +1,13 @@
+datasource:
+  pages:
+    home: home-config.yaml
+    about: about-config.yaml
+    contact: contact-config.yaml
+
+  urls:
+    /products: products-config.yaml
+    /orders: orders-config.yaml
+
+  hosts:
+    example.com: example-config.yaml
+    another.com: another-config.yaml
