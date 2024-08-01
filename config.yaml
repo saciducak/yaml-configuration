@@ -1,14 +1,14 @@
 # EXAMPLE OF SOME ACTİON STRUCTURES - you can access the codes for each example from other files of this repo!
 actions:
   - type: remove
-    selector: ".ad-banner" 
+    selector: "#ad-banner" 
   - type: replace
     selector: "#old-header"
-    newElement: "<header id='new-header' class='header'>New Header</header>" 
+    newElement: "<header id='new-header' class='header'>Yeni içerik</header>" 
   - type: insert
     position: "after"
     target: "main"
     element: "<section><p>New Section Inserted After Main Content</p></section>" 
   - type: alter
-    oldValue: "Dynamic"
+    oldValue: "header"
     newValue: "Interactive" 

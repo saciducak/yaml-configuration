@@ -92,7 +92,7 @@ function alterTextContent(oldValue, newValue) {
 // Function to load configurations and apply actions
 async function loadAndApplyConfigurations() {
     // Load multiple YAML configuration files
-    const configs = ['config1.yaml', 'config2.yaml']; // Add more YAML files if needed
+    const configs = ['config.yaml']; // Add more YAML files if needed
     for (const file of configs) {
         const config = await loadYAMLFile(file);
         applyActions(config ? config.actions : []);
@@ -100,4 +100,10 @@ async function loadAndApplyConfigurations() {
 }
 
 // Apply configurations after the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', loadAndApplyConfigurations);
+// document.(functionToExecute(), loadAndApplyConfigurations);
+var myButton = document.getElementById('my_button');
+
+function functionToExecute() {
+    console.log("buton çalışıyor.");
+    console.log(document.querySelectorAll(selector).forEach(el => el.remove()));
+}
